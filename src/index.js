@@ -56,3 +56,16 @@ else if(hour>=18 && hour<24){
  style.color="blue"
 }
 ReactDOM.render(<h1 className="heading" style={style}>Good {day}</h1>, document.getElementById("root"));
+
+
+//------------------------------------------------------------------------------
+
+//practice #3
+
+//React Components
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./componets/App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+

@@ -106,6 +106,41 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+//Login and registration forms rendered conditionally
+//Used Ternary operator and &&
+
+import React from "react";
+import Login from "./Login"
+
+var isLoggedIn=false
+var registered=false
+
+function login(props){
+    return (
+      <form className="form">
+        <Input type="text" placeholder="Username"/>
+        <Input type="password" placeholder="Password" />
+        {props.isRegistered ? null :<Input type="password" placeholder="Confirm Password" />}
+        <button type="submit">
+        {props.isRegistered? "Login" : "Register" }
+        </button>:
+    
+      </form>
+    );
+  function input(props){
+    return <input type={props.type} placeholder={props.placeholder} />
+}
+
+function App() {
+  return (
+    <div className="container">
+      {isLoggedIn?<h1>Hello</h1>:<Login isRegistered={registered}/>}
+    </div>
+  );
+}
+export default App;
 
 
 

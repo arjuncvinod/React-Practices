@@ -107,7 +107,7 @@ ReactDOM.render(
 );
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
-//
+//practice #5
 //Login and registration forms rendered conditionally
 //Used Ternary operator and &&
 

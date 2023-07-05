@@ -107,7 +107,7 @@ ReactDOM.render(
 );
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
-
+//
 //Login and registration forms rendered conditionally
 //Used Ternary operator and &&
 
@@ -141,6 +141,39 @@ function App() {
   );
 }
 export default App;
+
+
+//practice #6
+//mouseevents
+import React, { useState } from "react";
+
+function App() {
+
+  const [text,setText]=useState("hello")
+  const [sty,setSty]=useState(false)
+  function click() {
+    setText("submitted")
+    
+  }
+function setStyle(){
+ setSty(true)
+}
+function remStyle(){
+  setSty(false)
+  
+}
+  return (
+    <div className="container">
+      <h1>{text}</h1>
+      <input type="text" placeholder="What's your name?" />
+      <button onClick={click} onMouseOver={setStyle} style={{backgroundColor: sty ? "white" : "black"}}
+      onMouseOut={remStyle} >Submit</button>
+    </div>
+  );
+}
+
+export default App;
+
 
 
 

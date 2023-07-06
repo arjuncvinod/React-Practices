@@ -174,6 +174,38 @@ function remStyle(){
 
 export default App;
 
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+//Practice #7
+//React form event handling 
+
+import React, { useState } from "react";
+
+function App() {
+const [name,setName]= useState("")
+const [text,setText]=useState("")
+function handleChange(event){
+ setName(event.target.value)
+}
+function handleSubmit(event){  
+setText(name)
+
+event.preventDefault()
+}
+
+  return (
+    <div className="container">
+      <h1>Hello {text}</h1>
+      <form onSubmit={handleSubmit}>
+      <input onChange={handleChange} type="text" placeholder="What's your name?" />
+      <button type="submit" >Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
 
 
 

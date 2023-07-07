@@ -69,8 +69,6 @@ import App from "./componets/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-
-
 //---------------------------------------------------------------------------------------------------
 
 //practice #4

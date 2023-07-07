@@ -206,7 +206,7 @@ export default App;
 
 //------------------------------------------------------------------------------------------------------------------------
 //Pracice #8
-
+//object and class
 import React, { useState } from "react";
 
 function App() {
